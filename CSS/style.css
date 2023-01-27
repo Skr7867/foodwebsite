@@ -1,0 +1,251 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 70%;
+    width:105%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('img7.jpg') , rgb(42, 42, 42) no-repeat center center/cover;
+    background-blend-mode: overlay;
+    height:550px;
+    top:0px;
+    left:0px;
+    width: 105%;
+    z-index: -1;
+    opacity:0.91;
+}
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#services .box{ 
+    /* display: flex; */
+    border: 2px solid brown;
+    padding: 2px;
+    margin: 2px 15px;
+    border-radius: 20px;
+    background: #f2f2f2;
+    margin-bottom: 27px;
+}
+
+#services .box img{ 
+   height:100px 50px;
+   width: 100px ;
+   margin: auto;
+   display: flex;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+} 
+.services-container{
+    text-align: center;
+    padding: 2px 10px;
+    margin: 2px 310px;
+}
+/* Clients Section */
+#client-section{ 
+    position: relative;
+    align-items: center;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('veg2.jpg')no-repeat center center/cover;
+ width: 105%;
+ height: 140%;
+ z-index: -1; 
+ opacity:0.9;
+ text-align: center;
+} 
+
+#client{
+    display: flex;
+    justify-content: center;
+}
+
+.client-items{
+    padding: 4px;
+}
+
+#client img{
+    height:90px;
+    width: 100%;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+    margin:80px 0px;
+    padding: 20px;
+    /* text-align: center; */
+
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    padding: 30px;
+    margin: 2px;
+    left: 0px;
+    right: 0px;
+    width: 99%;
+    height: 90%;
+    z-index: -1;
+    opacity: 0.9;
+    background: url('contact.jpg') no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    padding: 20px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary-centre{
+    padding: 10px;
+    padding-bottom: 50px;
+}
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 66px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 10px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
